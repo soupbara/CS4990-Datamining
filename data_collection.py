@@ -211,4 +211,5 @@ def get_dataset(filename, rows=None):
     open(filename, 'w')
     web_scraper().to_csv(filename)
 
-get_dataset('test.csv')
+filename = input("Enter CSV filename, no .csv extention.\n\t:: ")
+get_dataset(filename + '.csv')
