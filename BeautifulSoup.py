@@ -19,7 +19,8 @@ def web_scraper() :
     # list containers
     name = []
     typeclass = []
-    archtype = []
+    archetype1 = []
+    archetype2 = []
     rarity = []
 
     base_hp = []
@@ -59,11 +60,18 @@ def web_scraper() :
         op_name = op.find('div', class_="operator-title").a.text
         op_type = op.find_all('div', class_="info-div")
         op_maintype = op_type[0].span.text
-        op_archtype = op_type[1].find('span', "prof-title").text
+        op_archetype = op_type[1].find('span', "prof-title").text
 
         name.append(op_name)
         typeclass.append(op_maintype)
-        archtype.append(op_archtype)
+
+        if ' / ' not in op_archetype :
+            archetype1.append(op_archetype)
+            archetype2.append("N/A")
+        else :
+            temp = op_archetype.split(" / ")
+            archetype1.append(temp[0])
+            archetype2.append(temp[1])
 
         op_rarity = operator.find('div', class_="rarity-div").find_all('img')
         rarity.append(len(op_rarity))
@@ -88,9 +96,9 @@ def web_scraper() :
         base_def.append(op_def)
 
         op_potentialstats = op_allstats[0].tbody.find('tr', class_="potentialStat").find_all('td', class_="stat-cell")
-        op_pothp = 0 if ' ' in op_potentialstats[0].text else int(op_potentialstats[0].text)
-        op_potatk = 0 if ' ' in op_potentialstats[1].text else int(op_potentialstats[1].text)
-        op_potdef = 0 if ' ' in op_potentialstats[2].text else int(op_potentialstats[2].text)
+        op_pothp = int(op_potentialstats[0].text)
+        op_potatk = int(op_potentialstats[1].text)
+        op_potdef = int(op_potentialstats[2].text)
 
         pot_hp.append(op_pothp)
         pot_atk.append(op_potatk)
@@ -162,29 +170,31 @@ def web_scraper() :
     exportedData = pd.DataFrame({
         'Name' : name,
         'Class' : typeclass,
-        'Archtype' : archtype,
+        'Archetype 1' : archetype1,
+        'Archetype 2' : archetype2,
         'Rarity' : rarity,
 
         'Base HP' : base_hp,
         'Base ATK' : base_atk,
         'Base DEF' : base_def,
 
-        'Potential HP' : pot_hp,
-        'Potential ATK' : pot_atk,
-        'Potential DEF' : pot_def,
+        'HP (Max Potential)' : pot_hp,
+        'ATK (Max Potential)' : pot_atk,
+        'DEF (Max Potential)' : pot_def,
 
-        'Trust HP' : trust_hp,
-        'Trust ATK' : trust_atk,
-        'Trust DEF' : trust_def,
+        'HP (Max Trust)' : trust_hp,
+        'ATK (Max Trust)' : trust_atk,
+        'DEF (Max Trust)' : trust_def,
 
         'Full HP' : full_hp,
         'Full ATK' : full_atk,
         'Full DEF' : full_def,
 
+        'Resistance' : res,
+
         'Base Cost' : base_cost,
         'Max Cost' : max_cost,
 
-        'Resistance' : res,
         'Block Count' : block_num,
         'Base Redeployment Time (s)' : base_redeploy,
         'Max Redeployment Time (s)' : max_redeploy,
