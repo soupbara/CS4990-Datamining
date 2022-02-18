@@ -1,7 +1,7 @@
+# April Trinh
+# CS 4990
 # https://www.dataquest.io/blog/web-scraping-beautifulsoup/
 
-from pkgutil import get_data
-from re import sub
 from bs4 import BeautifulSoup
 from requests import get
 import pandas as pd
