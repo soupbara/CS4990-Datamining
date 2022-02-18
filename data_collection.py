@@ -5,57 +5,63 @@ from re import sub
 from bs4 import BeautifulSoup
 from requests import get
 import pandas as pd
-import csv
 
-def web_scraper() :
-    url = 'https://gamepress.gg/arknights/tools/interactive-operator-list#tags=null##stats'
-    response = get(url)
-    # print(response.text[:500])
-    # this prints out the first 500 characters of the HTML
+url = 'https://gamepress.gg/arknights/tools/interactive-operator-list#tags=null##stats'
+response = get(url)
+# print(response.text[:500])
+# this prints out the first 500 characters of the HTML
 
-    soup = BeautifulSoup(response.text, 'html.parser')
-    type(soup)
+soup = BeautifulSoup(response.text, 'html.parser')
+type(soup)
 
-    # list containers
-    name = []
-    typeclass = []
-    archetype1 = []
-    archetype2 = []
-    rarity = []
+# list containers
+name = []
+typeclass = []
+archetype1 = []
+archetype2 = []
+rarity = []
 
-    base_hp = []
-    base_atk = []
-    base_def = []
+base_hp = []
+base_atk = []
+base_def = []
 
-    pot_hp = []
-    pot_atk = []
-    pot_def = []
+pot_hp = []
+pot_atk = []
+pot_def = []
 
-    trust_hp = []
-    trust_atk = []
-    trust_def = []
+trust_hp = []
+trust_atk = []
+trust_def = []
 
-    full_hp = []
-    full_atk = []
-    full_def = []
+full_hp = []
+full_atk = []
+full_def = []
 
-    base_cost = []
-    max_cost = []
+base_cost = []
+max_cost = []
 
-    res = []
-    block_num = []
-    base_redeploy = []
-    max_redeploy = []
-    interval_num = []
+res = []
+block_num = []
+base_redeploy = []
+max_redeploy = []
+interval_num = []
 
-    target_num = []
-    dmg_type = []
+target_num = []
+dmg_type = []
+
+# web scraper
+def web_scraper(rows) :
 
     operator_info = soup.find_all('td', class_= "operator-cell")
 
-    for operator in operator_info :
-        # basic operator information
+    count = 0 # keeps track of how many rows traversed
+    max = rows if rows != None else len(operator_info)
 
+    for operator in operator_info :
+        if count == max :
+            break
+
+        # basic operator information
         op = operator
         op_name = op.find('div', class_="operator-title").a.text
         op_type = op.find_all('div', class_="info-div")
@@ -76,15 +82,21 @@ def web_scraper() :
         op_rarity = operator.find('div', class_="rarity-div").find_all('img')
         rarity.append(len(op_rarity))
 
+        count += 1
+
     operator_all_stats = soup.find_all('td', class_="stats-section")
 
+    count = 0 # reset count for next loop
+    # max value should be the same
+
     for operator in operator_all_stats :
+        if count == max :
+            break
+
         op_stats = operator
         op_allstats = op_stats.div.div.find_all('table', class_="stats-table")
 
         # op_allstats[0] returns HP, ATK, and DEF, and cost
-
-        # TODO: ACCESSING MEMORY IS NOT CORRECT, ALWAYS RETURNING NULL VALUE
 
         op_HADCstats = op_allstats[0].tbody.find('tr', class_="baseStat").find_all('td', class_="stat-cell")
         op_hp = 0 if '-' in op_HADCstats[0].text else int(op_HADCstats[0].text)
@@ -132,9 +144,6 @@ def web_scraper() :
         # op_allstats[1] returns Res, Block, Redeploy, and Interval
         op_RBRI = op_allstats[1].tbody.tr.find_all('td')
 
-        # op_res = int(op_RBRI[0].text[1:len(op_RBRI[0].text)-2]) if op_RBRI[0].text[1:len(op_RBRI[0].text)-2] != '' else 0
-        # op_block = int(op_RBRI[1].text[1:len(op_RBRI[1].text)-2]) if op_RBRI[1].text[1:len(op_RBRI[1].text)-2] != '' else 0
-
         op_res = 0 if '-' in op_RBRI[0].text else int(op_RBRI[0].text)
         op_block = 0 if '-' in op_RBRI[1].text else int(op_RBRI[1].text)
 
@@ -166,6 +175,8 @@ def web_scraper() :
 
         target_num.append(op_target)
         dmg_type.append(op_dmgtype)
+
+        count += 1
 
     exportedData = pd.DataFrame({
         'Name' : name,
@@ -207,9 +218,15 @@ def web_scraper() :
     print(exportedData)
     return exportedData
 
+# If the rows parameter is None, all available data should be saved, otherwise save only the first "rows" rows
 def get_dataset(filename, rows=None):
     open(filename, 'w')
-    web_scraper().to_csv(filename)
+    web_scraper(rows).to_csv(filename)
 
+
+# Run
 filename = input("Enter CSV filename, no .csv extention.\n\t:: ")
-get_dataset(filename + '.csv')
+rows = input("Enter the number of rows of data desired. Enter no input for all.\n\t:: ")
+rows = None if rows == '' else int(rows)
+
+get_dataset(filename + '.csv', rows)
