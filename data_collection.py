@@ -6,51 +6,50 @@ from bs4 import BeautifulSoup
 from requests import get
 import pandas as pd
 
-url = 'https://gamepress.gg/arknights/tools/interactive-operator-list#tags=null##stats'
-response = get(url)
-# print(response.text[:500])
-# this prints out the first 500 characters of the HTML
-
-soup = BeautifulSoup(response.text, 'html.parser')
-type(soup)
-
-# list containers
-name = []
-typeclass = []
-archetype1 = []
-archetype2 = []
-rarity = []
-
-base_hp = []
-base_atk = []
-base_def = []
-
-pot_hp = []
-pot_atk = []
-pot_def = []
-
-trust_hp = []
-trust_atk = []
-trust_def = []
-
-full_hp = []
-full_atk = []
-full_def = []
-
-base_cost = []
-max_cost = []
-
-res = []
-block_num = []
-base_redeploy = []
-max_redeploy = []
-interval_num = []
-
-target_num = []
-dmg_type = []
-
 # web scraper
 def web_scraper(rows) :
+    url = 'https://gamepress.gg/arknights/tools/interactive-operator-list#tags=null##stats'
+    response = get(url)
+    # print(response.text[:500])
+    # this prints out the first 500 characters of the HTML
+
+    soup = BeautifulSoup(response.text, 'html.parser')
+    type(soup)
+
+    # list containers
+    name = []
+    typeclass = []
+    archetype1 = []
+    archetype2 = []
+    rarity = []
+
+    base_hp = []
+    base_atk = []
+    base_def = []
+
+    pot_hp = []
+    pot_atk = []
+    pot_def = []
+
+    trust_hp = []
+    trust_atk = []
+    trust_def = []
+
+    full_hp = []
+    full_atk = []
+    full_def = []
+
+    base_cost = []
+    max_cost = []
+
+    res = []
+    block_num = []
+    base_redeploy = []
+    max_redeploy = []
+    interval_num = []
+
+    target_num = []
+    dmg_type = []
 
     operator_info = soup.find_all('td', class_= "operator-cell")
 
@@ -218,15 +217,20 @@ def web_scraper(rows) :
     print(exportedData)
     return exportedData
 
-# If the rows parameter is None, all available data should be saved, otherwise save only the first "rows" rows
+# if the rows parameter is None, all available data should be saved, otherwise save only the first "rows" rows
 def get_dataset(filename, rows=None):
     open(filename, 'w')
     web_scraper(rows).to_csv(filename)
 
 
-# Run
-filename = input("Enter CSV filename, no .csv extention.\n\t:: ")
-rows = input("Enter the number of rows of data desired. Enter no input for all.\n\t:: ")
-rows = None if rows == '' else int(rows)
+# main method
+def main() :
+    filename = input("Enter CSV filename, no .csv extention.\n\t:: ")
+    rows = input("Enter the number of rows of data desired. Enter no input for all.\n\t:: ")
+    rows = None if rows == '' else int(rows)
 
-get_dataset(filename + '.csv', rows)
+    get_dataset(filename + '.csv', rows)
+
+# run
+if __name__ == '__main__':
+    main()
