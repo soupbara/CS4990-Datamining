@@ -1,0 +1,25 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Lee,Specialist,DP-Drain,Merchant,6,2427,789,465,2427,819,465,2727,844,465,2727,874,465,0,9,7,1,25,21,1, 1,Physical
+1,Mizuki,Specialist,Ambusher,N/A,6,1758,865,356,1758,897,356,1758,975,356,1758,1007,356,30,21,19,0,70,66,3.5, AoE,Physical
+2,Gladiia,Specialist,Puller,Hookmaster,6,2309,801,331,2309,801,331,2309,851,381,2309,851,381,0,16,13,2,80,70,1.8, 1,Physical
+3,Weedy,Specialist,Pusher,Push Stroker,6,2133,677,394,2273,677,394,2133,722,439,2273,722,439,0,21,19,2,70,66,1.2, Multi (Block #),Physical
+4,Phantom,Specialist,Fast-Redeploy,Executor,6,1645,558,322,1775,580,322,1645,648,322,1775,670,322,0,10,8,1,18,16,0.93, 1,Physical
+5,Aak,Specialist,Sacrificial Specialist,N/A,6,2034,703,152,2184,703,152,2334,753,152,2484,753,152,10,13,11,1,70,66,1.3, 1,Physical
+6,Kirara,Specialist,Ambusher,N/A,5,1780,798,340,1780,828,340,1980,858,340,1980,888,340,30,20,18,0,70,66,3.5, AoE, Physical
+7,Bena,Specialist,Substitute,Dollkeeper,5,2435,682,315,2435,682,315,2535,742,315,2535,742,315,0,17,14,2,80,70,1.2, 1,Physical
+8,Frost,Specialist,Trapmaster,N/A,5,1359,529,157,1359,552,157,1559,569,157,1559,592,157,0,13,11,1,70,66,0.85, 1,Physical
+9,Mr. Nothing,Specialist,DP-Drain,Merchant,5,2398,725,396,2398,750,396,2598,765,396,2598,790,396,0,8,6,1,25,22,1, 1,Physical
+10,Robin,Specialist,Trapmaster,N/A,5,1442,513,166,1442,513,166,1642,553,166,1642,553,166,0,13,10,1,80,70,0.85, 1,Physical
+11,Kafka,Specialist,Fast-Redeploy,Executor,5,1675,525,311,1825,525,311,2025,525,311,2175,525,311,0,9,7,1,18,16,0.93, 1,Physical
+12,Snowsant,Specialist,Puller,Hookmaster,5,1835,745,355,1835,745,355,2135,745,395,2135,745,395,0,15,12,2,80,70,1.8, 1,Physical
+13,Waai Fu,Specialist,Fast-Redeploy,Executor,5,1455,536,304,1455,536,323,1455,586,334,1455,586,353,0,9,7,1,18,16,0.93, 1,Physical
+14,FEater,Specialist,Pusher,Push Stroker,5,1845,640,382,1845,640,382,2145,685,382,2145,685,382,0,20,18,2,70,66,1.2, Multi (Block #),Physical
+15,Manticore,Specialist,Ambusher,N/A,5,1630,811,343,1630,841,343,1630,871,373,1630,901,373,30,20,18,0,70,66,3.5, AoE,Physical
+16,Cliffheart,Specialist,Puller,Hookmaster,5,1970,765,340,1970,765,340,1970,835,340,1970,835,340,0,13,11,2,70,66,1.8, 1,Physical
+17,Projekt Red,Specialist,Fast-Redeploy,Executor,5,1505,530,302,1505,550,302,1505,605,302,1505,625,302,0,9,7,1,18,16,0.93, 1,Physical
+18,Jaye,Specialist,DP-Drain,Merchant,4,2284,674,378,2284,697,378,2484,714,378,2484,737,378,0,7,5,1,25,22,1, 1,Physical
+19,Ethan,Specialist,Ambusher,N/A,4,1530,742,337,1680,742,337,1980,742,337,2130,742,337,30,19,17,0,70,60,3.5, AoE,Physical
+20,Shaw,Specialist,Pusher,Push Stroker,4,1785,580,365,1925,580,365,1985,615,365,2125,615,365,0,19,17,2,70,60,1.2, Multi (Block #),Physical
+21,Rope,Specialist,Puller,Hookmaster,4,1720,728,325,1720,728,347,1720,728,385,1720,728,407,0,12,10,2,70,66,1.8, 1,Physical
+22,Gravel,Specialist,Fast-Redeploy,Executor,4,1420,452,335,1580,452,335,1720,452,335,1880,452,335,0,8,6,1,18,16,0.93, 1,Physical
+23,THRM-EX,Specialist,Fast-Redeploy,Executor,1,1443,260,443,1443,260,443,1443,350,443,1443,350,443,50,3,3,0,200,200,0.93, 1,Physical

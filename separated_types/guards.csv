@@ -1,0 +1,46 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Nearl the Radiant Knight,Guard,Duelist,Dreadnought,6,3550,1064,295,3550,1099,295,3750,1149,295,3750,1184,295,0,19,17,1,70,66,1.5, 1,Physical
+1,Pallas,Guard,Support,Instructor,6,1963,687,455,1963,712,455,2263,737,455,2263,762,455,0,17,15,2,70,66,1.05, 1,Physical
+2,Mountain,Guard,Brawler,Fighter,6,2745,587,357,2745,611,357,2745,632,402,2745,656,402,0,11,9,1,70,66,0.78, 1,Physical
+3,Surtr,Guard,Arts Fighter,N/A,6,2916,672,414,2916,700,414,2916,772,414,2916,800,414,15,21,19,1,70,70,1.25, 1,Arts
+4,Thorns,Guard,Ranged,Lord,6,2612,711,402,2612,737,402,2612,741,472,2612,767,472,10,20,18,2,70,70,1.3, 1,Physical
+5,Blaze,Guard,AoE,Centurion,6,2821,765,370,2821,793,370,2821,825,415,2821,853,415,0,24,22,3,70,70,1.2, Multi (Block #),Physical
+6,Hellagur,Guard,Enmity,Musha,6,3825,762,334,3825,788,334,4225,832,334,4225,858,334,0,26,24,1,70,66,1.2, 1,Physical
+7,Ch'en,Guard,Dualstrike,Swordmaster,6,2880,610,352,2880,633,352,2880,660,402,2880,683,402,0,23,21,2,70,66,1.3, 1,Physical
+8,Skadi,Guard,Duelist,Dreadnought,6,3866,1015,263,3866,1048,263,3866,1095,303,3866,1128,303,0,19,17,1,70,66,1.5, 1,Physical
+9,SilverAsh,Guard,Ranged,Lord,6,2560,713,397,2560,739,397,2560,763,447,2560,789,447,10,20,18,2,70,66,1.3, 1,Physical
+10,Tequila,Guard,Liberator Guard,N/A,5,3757,302,501,3757,302,501,3987,352,501,3987,352,501,15,13,10,3,80,70,1.2, 1,Physical
+11,La Pluma,Guard,Reaper Guard,N/A,5,2250,650,452,2250,650,477,2250,725,452,2250,725,477,0,22,20,2,70,60,1.3, 1,Physical
+12,Akafuyu,Guard,Enmity,Musha,5,3635,728,328,3635,728,351,3635,758,383,3635,758,406,0,25,23,1,70,60,1.2, 1,Physical
+13,Tachanka,Guard,Dualstrike,Swordmaster,5,2626,621,309,2626,621,309,2626,661,349,2626,661,349,0,24,21,2,80,70,1.3, 1,Physical
+14,Amiya (Guard),Guard,Arts Fighter,N/A,5,2629,657,376,2829,685,398,2629,702,421,2829,730,443,20,21,19,1,70,70,1.25, 1,Arts
+15,Whislash,Guard,Support,Instructor,5,1932,645,420,1932,645,420,1932,675,460,1932,675,460,0,18,15,2,80,70,1.05, 1,Physical
+16,Sharp,Guard,Duelist,Dreadnought,5,3565,957,265,3565,957,265,3565,957,265,3565,957,265,0,17,17,1,60,60,1.5, 1,Physical
+17,Flint,Guard,Brawler,Fighter,5,2495,545,334,2495,569,334,2495,620,334,2495,644,334,0,10,8,1,70,66,0.78, 1,Physical
+18,Ayerscarpe,Guard,Ranged,Lord,5,2420,670,375,2420,696,375,2420,745,375,2420,771,375,10,19,17,2,70,66,1.3, AoE,Physical
+19,Sideroca,Guard,Arts Fighter,N/A,5,2845,620,369,2845,620,369,3345,620,369,3345,620,369,15,23,20,1,80,70,1.25,  1,Arts
+20,Bibeak,Guard,Dualstrike,Swordmaster,5,2550,602,332,2550,624,332,2550,682,332,2550,704,332,0,22,20,2,70,66,1.3, 1,Physical
+21,Broca,Guard,AoE,Centurion,5,2335,762,366,2335,790,366,2335,842,366,2335,870,366,0,23,21,3,70,66,1.2, Multi (Block #),Physical
+22,Flamebringer,Guard,Duelist,Dreadnought,5,3907,918,195,3907,918,195,4307,963,195,4307,963,195,0,20,17,1,80,70,1.5, 1,Physical
+23,Astesia,Guard,Arts Fighter,N/A,5,2523,660,393,2523,660,416,2523,690,448,2523,690,471,15,21,19,1,70,60,1.25, 1,Arts
+24,Swire,Guard,Support,Instructor,5,1914,656,413,1914,682,413,1914,696,443,1914,722,443,0,16,14,2,70,66,1.05, 1,Physical
+25,Savage,Guard,AoE,Centurion,5,2430,705,320,2680,740,320,2430,705,360,2680,740,360,0,22,22,3,70,70,1.2, Multi (Block #),Physical
+26,Specter,Guard,AoE,Centurion,5,2630,725,355,2630,752,355,2630,805,355,2630,832,355,0,23,21,3,70,66,1.2, Multi (Block #),Physical
+27,Lappland,Guard,Ranged,Lord,5,2350,685,365,2350,710,365,2350,760,365,2350,785,365,15,19,17,2,70,66,1.3, 1,Physical
+28,Indra,Guard,Brawler,Fighter,5,2565,530,350,2565,553,350,2565,605,350,2565,628,350,0,10,8,1,70,66,0.78, 1,Physical
+29,Franka,Guard,Duelist,Dreadnought,5,3768,936,235,3768,966,235,3768,1011,260,3768,1041,260,0,18,16,1,70,60,1.5,  1,Physical
+30,Arene,Guard,Ranged,Lord,4,2250,640,340,2250,658,340,2250,695,340,2250,713,340,10,18,16,2,70,66,1.3, 1,Physical
+31,Jackie,Guard,Brawler,Fighter,4,2378,529,308,2378,550,308,2378,589,308,2378,610,308,0,9,7,1,70,66,0.78, 1,Physical
+32,Cutter,Guard,Dualstrike,Swordmaster,4,2320,571,325,2320,592,325,2320,641,325,2320,662,325,0,21,19,2,70,66,1.3, 1,Physical
+33,Conviction,Guard,Duelist,Dreadnought,4,3483,929,166,3483,929,166,3705,951,166,3705,951,166,0,16,16,1,70,70,1.5, 1,Physical
+34,Utage,Guard,Enmity,Musha,4,3444,693,312,3444,716,312,3444,723,352,3444,746,352,0,24,22,1,70,60,1.2, 1,Physical
+35,Beehunter,Guard,Brawler,Fighter,4,2435,513,312,2615,513,312,2435,573,312,2615,573,312,0,9,7,1,70,66,0.78, 1,Physical
+36,Mousse,Guard,Arts Fighter,N/A,4,2345,644,357,2345,670,357,2345,679,392,2345,705,392,15,20,18,1,70,66,1.25, 1,Arts
+37,Estelle,Guard,AoE,Centurion,4,2500,690,315,2700,690,315,2850,690,315,3050,690,315,0,22,20,3,70,66,1.2, Multi (Block #),Physical
+38,Frostleaf,Guard,Ranged,Lord,4,2260,660,323,2260,660,323,2260,660,378,2260,660,378,10,18,16,2,70,60,1.3, 1,Physical
+39,Matoimaru,Guard,Duelist,Dreadnought,4,3640,916,156,3820,916,156,4090,916,156,4270,916,156,0,17,15,1,70,66,1.5, 1,Physical
+40,Dobermann,Guard,Support,Instructor,4,2024,602,382,2174,602,382,2024,632,412,2174,632,412,0,15,13,2,70,66,1.05, 1,Physical
+41,Popukar,Guard,AoE,Centurion,3,1858,495,245,1858,518,245,1858,545,245,1858,568,245,0,19,17,2,70,66,1.2, Multi (Block #),Physical
+42,Midnight,Guard,Ranged,Lord,3,1653,497,282,1653,519,282,1653,547,282,1653,569,282,10,16,14,2,70,66,1.3, 1,Physical
+43,Melantha,Guard,Duelist,Dreadnought,3,2745,738,155,2745,763,155,2745,803,155,2745,828,155,0,15,13,1,70,60,1.5, 1,Physical
+44,Castle-3,Guard,Duelist,Dreadnought,1,1191,353,90,1191,353,90,1391,413,90,1391,413,90,0,3,3,1,200,200,1.5, 1,Physical

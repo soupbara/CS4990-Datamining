@@ -1,0 +1,28 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Mudrock,Defender,Enmity,Juggernaut,6,3928,882,602,3928,882,631,4428,882,662,4428,882,691,10,36,34,3,70,66,1.6, 1,Physical
+1,Blemishine,Defender,Healing,Guardian,6,3242,491,581,3242,517,581,3242,581,601,3242,607,601,10,22,20,3,70,66,1.2, 1,Physical
+2,Eunectes,Defender,Duelist,N/A,6,4468,1007,615,4468,1007,642,4468,1077,685,4468,1077,712,0,33,31,1,70,66,1.6, 1,Physical
+3,Nian,Defender,Normal,Protector,6,3699,619,726,3699,643,756,4099,619,796,4099,643,826,0,23,21,3,70,70,1.5, 1,Physical
+4,Saria,Defender,Healing,Guardian,6,3150,485,595,3150,485,622,3150,535,655,3150,535,682,10,22,20,3,70,66,1.2, 1,Physical
+5,Hoshiguma,Defender,Normal,Protector,6,3850,430,723,3850,430,753,3850,490,783,3850,490,813,0,23,21,3,70,70,1.2, 1,Physical
+6,Shalem,Defender,Arts Protector,N/A,5,3090,649,550,3090,674,550,3090,729,550,3090,754,550,15,25,23,3,70,66,1.6, 1,Arts
+7,Aurora,Defender,Duelist,N/A,5,4027,901,640,4027,901,667,4027,956,695,4027,956,722,0,32,30,1,70,66,1.6, 1,Physical
+8,Ashlock,Defender,Fortress,N/A,5,3207,865,541,3207,897,541,3207,915,591,3207,947,591,0,27,25,3,70,66,2.8, AoE,Physical
+9,Heavyrain,Defender,Normal,Protector,5,3380,378,721,3380,378,721,3730,378,756,3730,378,756,0,24,21,3,80,70,1.2, 1,Physical
+10,Blitz,Defender,Normal,Protector,5,3213,445,676,3213,470,676,3213,490,721,3213,515,721,0,22,20,3,70,66,1.2, 1,Physical
+11,Asbestos,Defender,Arts Protector,N/A,5,3135,633,555,3345,633,555,3135,673,595,3345,673,595,15,25,23,3,70,60,1.6, 1,Arts
+12,Hung,Defender,Healing,Guardian,5,2823,442,585,2823,442,610,3023,442,645,3023,442,670,10,21,19,3,70,66,1.2, 1,Physical
+13,Bison,Defender,Normal,Protector,5,3456,375,701,3456,375,701,3456,375,781,3456,375,781,0,24,21,3,80,70,1.2, 1,Physical
+14,Vulcan,Defender,Enmity,Juggernaut,5,3688,820,585,3938,820,585,4088,870,585,4338,870,585,10,35,33,3,70,66,1.6, 1,Physical
+15,Croissant,Defender,Normal,Protector,5,3520,380,710,3520,380,736,3670,380,770,3670,380,796,0,22,20,3,70,66,1.2, 1,Physical
+16,Liskarm,Defender,Normal,Protector,5,3240,425,710,3240,425,737,3240,470,755,3240,470,782,0,22,20,3,70,66,1.2, 1,Physical
+17,Nearl,Defender,Healing,Guardian,5,2780,462,575,2780,462,600,2780,502,625,2780,502,650,10,21,19,3,70,66,1.2, 1,Physical
+18,Bubble,Defender,Normal,Protector,4,3416,370,645,3416,370,670,3416,370,720,3416,370,745,0,21,19,3,70,60,1.2, 1,Physical
+19,Dur-nar,Defender,Arts Protector,N/A,4,3007,583,548,3007,606,568,3007,648,548,3007,671,568,15,24,22,3,70,66,1.6, 1,Arts
+20,Gummy,Defender,Healing,Guardian,4,2550,435,562,2550,456,562,2950,435,562,2950,456,562,10,20,18,3,70,66,1.2, 1,Physical
+21,Cuora,Defender,Normal,Protector,4,3105,365,690,3105,365,717,3105,365,765,3105,365,792,0,21,19,3,70,60,1.2, 1,Physical
+22,Matterhorn,Defender,Normal,Protector,4,3235,375,670,3485,375,670,3620,375,670,3870,375,670,5,21,19,3,70,60,1.2, 1,Physical
+23,Spot,Defender,Healing,Guardian,3,1833,320,442,1833,320,466,1833,350,472,1833,350,496,10,17,15,3,70,66,1.2, 1,Physical
+24,Beagle,Defender,Normal,Protector,3,2035,295,490,2035,295,518,2035,295,550,2035,295,578,0,18,16,3,70,60,1.2, 1,Physical
+25,Cardigan,Defender,Normal,Protector,3,2130,305,475,2330,305,475,2430,305,475,2630,305,475,0,18,16,3,70,60,1.2, 1,Physical
+26,Noir Corne,Defender,Normal,Protector,2,1670,240,315,1760,240,315,1670,240,355,1760,240,355,0,14,12,3,70,65,1.2, 1,Physical

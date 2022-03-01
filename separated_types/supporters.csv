@@ -1,0 +1,22 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Ling,Supporter,Summoner,N/A,6,1079,473,138,1079,497,138,1429,508,138,1429,532,138,20,12,10,1,70,66,1.6, 1,Arts
+1,Gnosis,Supporter,Debuffer,Hexer,6,2035,455,132,2035,488,132,2035,535,132,2035,568,132,25,13,11,1,70,66,1.6, 1,Arts
+2,Skadi the Corrupting Heart,Supporter,Aura,Bard,6,1603,368,233,1603,395,233,1603,418,263,1603,445,263,0,8,6,1,70,64,1, 1,Physical
+3,Suzuran,Supporter,Slower,Decel Binder,6,1480,521,128,1480,546,128,1480,596,128,1480,621,128,25,16,14,1,70,66,1.9, 1,Arts 
+4,Magallan,Supporter,Summoner,N/A,6,1103,469,140,1103,492,140,1403,509,140,1403,532,140,20,12,10,1,70,66,1.6, 1,Arts
+5,Angelina,Supporter,Slower,Decel Binder,6,1385,542,120,1385,567,120,1385,617,120,1385,642,120,25,16,14,1,70,70,1.9, 1,Arts
+6,Quercus,Supporter,Buffer,Abjurer,5,1680,463,172,1840,463,172,2080,463,202,2240,463,202,25,12,10,1,70,66,1.6, 1,Arts
+7,Nine-Colored Deer,Supporter,Buffer,Abjurer,5,1685,443,179,1685,443,179,2035,478,179,2035,478,179,25,11,11,1,70,70,1.6, 1,Arts
+8,Scene,Supporter,Summoner,N/A,5,1105,432,155,1105,432,155,1305,432,190,1305,432,190,20,11,9,1,70,60,1.6, 1,Arts
+9,Tsukinogi,Supporter,Buffer,Abjurer,5,1620,385,175,1780,385,175,1920,425,175,2080,425,175,25,12,10,1,70,66,1.6, 1,Arts
+10,Shamare,Supporter,Debuffer,Hexer,5,1728,408,105,1728,408,105,1728,473,105,1728,473,105,25,12,10,1,70,66,1.6, 1,Arts
+11,Glaucus,Supporter,Slower,Decel Binder,5,1267,505,100,1267,528,100,1567,540,100,1567,563,100,20,15,13,1,70,66,1.9, 1,Arts
+12,Sora,Supporter,Aura,Bard,5,1356,335,238,1496,335,238,1356,385,258,1496,385,258,0,7,5,1,70,60,1, 1,Physical
+13,Istina,Supporter,Slower,Decel Binder,5,1280,518,104,1280,541,104,1280,583,104,1280,606,104,20,15,13,1,70,66,1.9, 1,Arts
+14,Pramanix,Supporter,Debuffer,Hexer,5,1605,430,102,1605,430,102,1605,495,102,1605,495,102,25,12,10,1,70,66,1.6, 1,Arts
+15,Mayer,Supporter,Summoner,N/A,5,1068,443,130,1068,443,130,1268,478,130,1268,478,130,20,11,9,1,70,60,1.6, 1,Arts
+16,Roberta,Supporter,Artificer,N/A,4,2470,535,415,2470,535,450,2470,570,450,2470,570,485,0,17,15,2,70,66,1.5, 1,Physical
+17,Podenco,Supporter,Slower,Decel Binder,4,1163,492,96,1163,513,96,1163,542,96,1163,563,96,20,14,12,1,70,66,1.9, 1,Arts
+18,Earthspirit,Supporter,Slower,Decel Binder,4,1205,480,101,1205,501,101,1205,530,101,1205,551,101,20,14,12,1,70,66,1.9, 1,Arts
+19,Deepcolor,Supporter,Summoner,N/A,4,1050,403,125,1050,403,125,1350,403,125,1350,403,125,15,10,8,1,70,60,1.6, 1,Arts
+20,Orchid,Supporter,Slower,Decel Binder,3,935,378,83,935,397,83,935,418,83,935,437,83,15,12,10,1,70,60,1.9, 1,Arts

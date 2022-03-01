@@ -1,0 +1,24 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Kal'tsit,Medic,ST,Medic,6,1633,490,215,1633,515,215,2033,490,255,2033,515,255,0,20,18,1,70,66,2.85, 1,Healing
+1,Nightingale,Medic,AoE,Multi-target Medic,6,1705,350,169,1705,350,169,1705,420,169,1705,420,169,5,18,16,1,70,66,2.85, 3,Healing
+2,Shining,Medic,ST,Medic,6,1613,530,138,1613,530,163,1613,610,158,1613,610,183,0,20,18,1,70,70,2.85, 1,Healing
+3,Honeyberry,Medic,Wandering Medic,N/A,5,1458,375,107,1458,394,107,1608,410,107,1608,429,107,10,15,13,1,70,66,2.85, 1,Healing
+4,Mulberry,Medic,Wandering Medic,N/A,5,1367,388,99,1367,407,99,1517,423,99,1517,442,99,10,15,13,1,70,66,2.85, 1,Healing
+5,Tuye,Medic,ST,Medic,5,1550,493,135,1550,493,135,1550,568,135,1550,568,135,0,21,18,1,80,70,2.85, 1,Healing
+6,Whisperain,Medic,Wide-Range,Therapist,5,1432,492,119,1432,515,119,1632,532,119,1632,555,119,10,20,18,1,70,66,2.85, 1,Healing
+7,Touch,Medic,ST,Medic,5,1633,595,135,1633,595,135,1633,595,135,1633,595,135,0,18,18,1,60,60,2.85, 1,Healing
+8,Folinic,Medic,ST,Medic,5,1585,479,133,1585,479,133,1785,529,133,1785,529,133,0,21,18,1,80,70,2.85, 1,Healing
+9,Ceylon,Medic,Wide-Range,Therapist,5,1455,468,126,1455,468,126,1655,508,126,1655,508,126,10,22,19,1,80,70,2.85, 1,Healing
+10,Breeze,Medic,AoE,Multi-target Medic,5,1595,343,153,1595,363,153,1795,373,153,1795,393,153,0,17,15,1,70,60,2.85, 3,Healing
+11,Warfarin,Medic,ST,Medic,5,1520,505,125,1520,532,125,1520,580,125,1520,607,125,0,19,17,1,70,60,2.85, 1,Healing
+12,Silence,Medic,ST,Medic,5,1595,482,142,1595,506,142,1595,557,142,1595,581,142,0,19,17,1,70,66,2.85, 1,Healing
+13,Ptilopsis,Medic,AoE,Multi-target Medic,5,1610,335,150,1610,356,150,1610,390,150,1610,411,150,0,17,15,1,70,60,2.85, 3,Healing
+14,Purestream,Medic,Wide-Range,Therapist,4,1365,454,118,1365,477,118,1515,489,118,1515,512,118,10,19,17,1,80,70,2.85, 1,Healing
+15,Sussurro,Medic,ST,Medic,4,1345,488,122,1345,511,122,1345,548,122,1345,571,122,0,18,16,1,70,66,2.85, 1,Healing
+16,Perfumer,Medic,AoE,Multi-target Medic,4,1560,320,145,1560,339,145,1710,345,145,1710,364,145,0,16,14,1,70,66,2.85, 3,Healing
+17,Gavial,Medic,ST,Medic,4,1580,450,152,1580,473,152,1580,480,182,1580,503,182,0,18,16,1,70,66,2.85, 1,Healing
+18,Myrrh,Medic,ST,Medic,4,1420,465,131,1420,488,131,1420,525,131,1420,548,131,0,18,16,1,70,66,2.85, 1,Healing
+19,Reserve Operator - Logistics,Medic,ST,Medic,3,1080,338,102,1080,338,102,1080,338,102,1080,338,102,0,16,16,1,70,70,2.85, 1,Healing
+20,Ansel,Medic,ST,Medic,3,1135,362,109,1135,382,109,1135,407,109,1135,427,109,0,17,15,1,70,66,2.85, 1,Healing
+21,Hibiscus,Medic,ST,Medic,3,1220,345,110,1220,363,110,1220,390,110,1220,408,110,0,17,15,1,70,60,2.85, 1,Healing
+22,Lancet-2,Medic,ST,Medic,1,435,70,27,435,70,27,535,110,27,535,110,27,0,3,3,1,200,200,2.85, 1,Healing

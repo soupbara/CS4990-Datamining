@@ -7,7 +7,7 @@ from requests import get
 import pandas as pd
 
 # web scraper
-def web_scraper(rows) :
+def web_scraper(rows, op_class) :
     url = 'https://gamepress.gg/arknights/tools/interactive-operator-list#tags=null##stats'
     response = get(url)
     # print(response.text[:500])
@@ -51,6 +51,8 @@ def web_scraper(rows) :
     target_num = []
     dmg_type = []
 
+    tracker = []
+
     operator_info = soup.find_all('td', class_= "operator-cell")
 
     count = 0 # keeps track of how many rows traversed
@@ -67,19 +69,24 @@ def web_scraper(rows) :
         op_maintype = op_type[0].span.text
         op_archetype = op_type[1].find('span', "prof-title").text
 
-        name.append(op_name)
-        typeclass.append(op_maintype)
+        if op_maintype == op_class :
+            name.append(op_name)
+            typeclass.append(op_maintype)
 
-        if ' / ' not in op_archetype :
-            archetype1.append(op_archetype)
-            archetype2.append("N/A")
+            if ' / ' not in op_archetype :
+                archetype1.append(op_archetype)
+                archetype2.append("N/A")
+            else :
+                temp = op_archetype.split(" / ")
+                archetype1.append(temp[0])
+                archetype2.append(temp[1])
+
+            op_rarity = operator.find('div', class_="rarity-div").find_all('img')
+            rarity.append(len(op_rarity))
+
+            tracker.append(1)
         else :
-            temp = op_archetype.split(" / ")
-            archetype1.append(temp[0])
-            archetype2.append(temp[1])
-
-        op_rarity = operator.find('div', class_="rarity-div").find_all('img')
-        rarity.append(len(op_rarity))
+            tracker.append(0)
 
         count += 1
 
@@ -96,51 +103,30 @@ def web_scraper(rows) :
         op_allstats = op_stats.div.div.find_all('table', class_="stats-table")
 
         # op_allstats[0] returns HP, ATK, and DEF, and cost
-
         op_HADCstats = op_allstats[0].tbody.find('tr', class_="baseStat").find_all('td', class_="stat-cell")
         op_hp = 0 if '-' in op_HADCstats[0].text else int(op_HADCstats[0].text)
         op_atk = 0 if '-' in op_HADCstats[1].text else int(op_HADCstats[1].text)
         op_def = 0 if '-' in op_HADCstats[2].text else int(op_HADCstats[2].text)
-        
-        base_hp.append(op_hp)
-        base_atk.append(op_atk)
-        base_def.append(op_def)
 
         op_potentialstats = op_allstats[0].tbody.find('tr', class_="potentialStat").find_all('td', class_="stat-cell")
         op_pothp = int(op_potentialstats[0].text)
         op_potatk = int(op_potentialstats[1].text)
         op_potdef = int(op_potentialstats[2].text)
 
-        pot_hp.append(op_pothp)
-        pot_atk.append(op_potatk)
-        pot_def.append(op_potdef)
-
         op_truststats = op_allstats[0].tbody.find('tr', class_="trustStat").find_all('td', class_="stat-cell")
         op_trusthp = int(op_truststats[0].text)
         op_trustatk = int(op_truststats[1].text)
         op_trustdef = int(op_truststats[2].text)
-
-        trust_hp.append(op_trusthp)
-        trust_atk.append(op_trustatk)
-        trust_def.append(op_trustdef)
 
         op_fullstats = op_allstats[0].tbody.find('tr', class_="fullStat").find_all('td', class_="stat-cell")
         op_fullhp = int(op_fullstats[0].text)
         op_fullatk = int(op_fullstats[1].text)
         op_fulldef = int(op_fullstats[2].text)
 
-        full_hp.append(op_fullhp)
-        full_atk.append(op_fullatk)
-        full_def.append(op_fulldef)
-
         op_cost = op_allstats[0].tbody.find('tr', class_="fullStat").find_all('td')
         op_basecost = int(op_cost[3].find('span', class_="base-potential-cell").text) if op_cost[3].find('span', class_="base-potential-cell").text != '' else 0
         op_maxcost = int(op_cost[3].find('span', class_="max-potential-cell").text) if op_cost[3].find('span', class_="max-potential-cell").text != '' else 0
 
-        base_cost.append(op_basecost)
-        max_cost.append(op_maxcost)
-
-        # op_allstats[1] returns Res, Block, Redeploy, and Interval
         op_RBRI = op_allstats[1].tbody.tr.find_all('td')
 
         op_res = 0 if '-' in op_RBRI[0].text else int(op_RBRI[0].text)
@@ -155,13 +141,6 @@ def web_scraper(rows) :
         if op_interval == "" :
             op_interval = 0
 
-        res.append(op_res)
-        block_num.append(op_block)
-        base_redeploy.append(op_baseredeploy)
-        max_redeploy.append(op_maxredeploy)
-        interval_num.append(op_interval)
-
-        # target number and damage type
         op_TD = op_stats.find('div', class_="target-damage-type")
         op_target = op_TD.find('div', class_="target-cell").text
         op_target = op_target.replace("Target:", "")
@@ -172,8 +151,38 @@ def web_scraper(rows) :
         op_dmgtype = op_TD.find('div', class_="damage-type-cell").a.text
         op_dmgtype = op_dmgtype.replace("\n", "")
 
-        target_num.append(op_target)
-        dmg_type.append(op_dmgtype)
+        if tracker[count] == 1 :
+            
+            base_hp.append(op_hp)
+            base_atk.append(op_atk)
+            base_def.append(op_def)
+
+            pot_hp.append(op_pothp)
+            pot_atk.append(op_potatk)
+            pot_def.append(op_potdef)
+
+            trust_hp.append(op_trusthp)
+            trust_atk.append(op_trustatk)
+            trust_def.append(op_trustdef)
+
+            full_hp.append(op_fullhp)
+            full_atk.append(op_fullatk)
+            full_def.append(op_fulldef)
+
+            base_cost.append(op_basecost)
+            max_cost.append(op_maxcost)
+
+            # op_allstats[1] returns Res, Block, Redeploy, and Interval
+
+            res.append(op_res)
+            block_num.append(op_block)
+            base_redeploy.append(op_baseredeploy)
+            max_redeploy.append(op_maxredeploy)
+            interval_num.append(op_interval)
+
+            # target number and damage type
+            target_num.append(op_target)
+            dmg_type.append(op_dmgtype)
 
         count += 1
 
@@ -218,18 +227,19 @@ def web_scraper(rows) :
     return exportedData
 
 # if the rows parameter is None, all available data should be saved, otherwise save only the first "rows" rows
-def get_dataset(filename, rows=None):
+def get_dataset(filename, op_class, rows=None):
     open(filename, 'w')
-    web_scraper(rows).to_csv(filename)
+    web_scraper(rows, op_class).to_csv(filename)
 
 
 # main method
 def main() :
     filename = input("Enter CSV filename, no .csv extention.\n\t:: ")
+    op_class = input("Enter class name\n\t:: ")
     rows = input("Enter the number of rows of data desired. Enter no input for all.\n\t:: ")
     rows = None if rows == '' else int(rows)
 
-    get_dataset(filename + '.csv', rows)
+    get_dataset(filename + '.csv', op_class, rows)
 
 # run
 if __name__ == '__main__':

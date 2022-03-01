@@ -1,0 +1,38 @@
+,Name,Class,Archetype 1,Archetype 2,Rarity,Base HP,Base ATK,Base DEF,HP (Max Potential),ATK (Max Potential),DEF (Max Potential),HP (Max Trust),ATK (Max Trust),DEF (Max Trust),Full HP,Full ATK,Full DEF,Resistance,Base Cost,Max Cost,Block Count,Base Redeployment Time (s),Max Redeployment Time (s),Attack Interval (s),Target Number,Damage Type
+0,Fartooth,Sniper,Long-Range,Deadeye,6,1522,1196,163,1522,1236,163,1522,1296,163,1522,1336,163,0,22,20,1,70,66,2.7, 1,Physical
+1,Ch'en the Holungday,Sniper,Boomstick,Spreadshooter,6,2501,773,203,2501,806,203,2501,853,203,2501,886,203,0,32,30,1,70,66,2.3, AoE,Physical
+2,Ash,Sniper,Anti-Air,Marksman,6,1689,534,169,1689,561,169,1689,624,169,1689,651,169,0,14,12,1,70,66,1, 1,Physical
+3,Archetto,Sniper,Anti-Air,Marksman,6,1705,528,172,1705,555,172,1705,618,172,1705,645,172,0,14,12,1,70,66,1, 1,Physical
+4,Rosmontis,Sniper,Aftershock,Flinger,6,1944,688,245,1944,720,245,1944,748,275,1944,780,275,15,25,23,1,70,66,2.1, 1,Physical
+5,Rosa (Poca),Sniper,Heavyweight,Besieger,6,1755,1032,122,1755,1066,122,1755,1142,122,1755,1176,122,0,24,22,1,70,66,2.4, 1,Physical
+6,W,Sniper,AoE,Artilleryman,6,1605,912,133,1605,947,133,1605,1012,133,1605,1047,133,0,29,27,1,70,66,2.8, AoE,Physical
+7,Schwarz,Sniper,Close Range,Heavyshooter,6,1833,840,225,1833,870,225,1833,940,225,1833,970,225,0,20,18,1,70,66,1.6, 1,Physical
+8,Exusiai,Sniper,Anti-Air,Marksman,6,1673,540,161,1673,567,161,1673,630,161,1673,657,161,0,14,12,1,70,70,1, 1,Physical
+9,Kroos the Keen Glint,Sniper,Anti-Air,Marksman,5,1520,502,176,1520,502,176,1520,577,176,1520,577,176,0,15,12,1,80,70,1, 1,Physical
+10,Toddifons,Sniper,Heavyweight,Besieger,5,1667,954,123,1667,988,123,1667,1049,123,1667,1083,123,0,23,21,1,70,66,2.4, 1,Physical
+11,Aosta,Sniper,Boomstick,Spreadshooter,5,2376,691,192,2376,717,192,2376,756,192,2376,782,192,0,31,29,1,70,66,2.3, AoE,Physical
+12,April,Sniper,Anti-Air,Marksman,5,1280,528,160,1280,551,160,1280,603,160,1280,626,160,0,13,11,1,70,60,1, 1,Physical
+13,Stormeye,Sniper,Anti-Air,Marksman,5,1549,595,159,1549,595,159,1549,595,159,1549,595,159,0,12,12,1,60,60,1, 1,Physical
+14,Andreana,Sniper,Long-Range,Deadeye,5,1498,1070,128,1498,1105,128,1798,1110,128,1798,1145,128,0,21,19,1,70,66,2.7, 1,Physical
+15,Sesa,Sniper,AoE,Artilleryman,5,1655,833,123,1655,866,123,1655,918,123,1655,951,123,0,28,26,1,70,66,2.8, AoE,Physical
+16,GreyThroat,Sniper,Anti-Air,Marksman,5,1493,513,152,1493,536,152,1493,588,152,1493,611,152,0,13,11,1,70,60,1, 1,Physical
+17,Executor,Sniper,Boomstick,Spreadshooter,5,2330,720,185,2330,749,185,2330,785,185,2330,814,185,0,31,29,1,70,66,2.3, AoE,Physical
+18,Firewatch,Sniper,Long-Range,Deadeye,5,1450,1085,131,1450,1120,131,1450,1175,131,1450,1210,131,0,21,19,1,70,66,2.7, 1,Physical
+19,Provence,Sniper,Close Range,Heavyshooter,5,1680,781,215,1680,811,215,1680,871,215,1680,901,215,0,19,17,1,70,66,1.6, 1,Physical
+20,Meteorite,Sniper,AoE,Artilleryman,5,1505,865,116,1505,900,116,1505,950,116,1505,985,116,0,28,26,1,70,60,2.8, AoE,Physical
+21,Platinum,Sniper,Anti-Air,Marksman,5,1550,505,165,1550,528,165,1550,580,165,1550,603,165,0,13,11,1,70,66,1, 1,Physical
+22,Blue Poison,Sniper,Anti-Air,Marksman,5,1230,535,130,1230,559,130,1230,610,130,1230,634,130,5,13,11,1,70,66,1, 1,Physical
+23,Pinecone,Sniper,Boomstick,Spreadshooter,4,2200,667,167,2200,695,167,2200,722,167,2200,750,167,0,30,28,1,70,66,2.3, AoE,Physical
+24,Aciddrop,Sniper,Close Range,Heavyshooter,4,1576,735,209,1576,765,209,1576,815,209,1576,845,209,0,18,16,1,70,62,1.6, 1,Physical
+25,Ambriel,Sniper,Long-Range,Deadeye,4,1595,977,122,1595,977,122,1595,1052,122,1595,1052,122,0,20,18,1,70,66,2.7, 1,Physical
+26,May,Sniper,Anti-Air,Marksman,4,1632,478,105,1632,501,105,1632,543,105,1632,566,105,0,12,10,1,70,66,1, 1,Physical
+27,Vermeil,Sniper,Anti-Air,Marksman,4,1230,485,162,1230,509,162,1230,550,162,1230,574,162,0,12,10,1,70,60,1, 1,Physical
+28,Shirayuki,Sniper,AoE,Artilleryman,4,1630,797,100,1630,827,100,1630,867,100,1630,897,100,0,27,25,1,70,60,2.8, AoE,Physical
+29,Meteor,Sniper,Anti-Air,Marksman,4,1370,465,165,1370,488,165,1370,530,165,1370,553,165,0,12,10,1,70,66,1, 1,Physical
+30,Jessica,Sniper,Anti-Air,Marksman,4,1320,475,154,1320,498,154,1320,540,154,1320,563,154,0,12,10,1,70,60,1, 1,Physical
+31,Reserve Operator - Sniper,Sniper,Anti-Air,Marksman,3,980,401,115,980,401,115,980,401,115,980,401,115,0,10,10,1,70,70,1, 1,Physical
+32,Catapult,Sniper,AoE,Artilleryman,3,1150,617,85,1150,644,85,1150,672,85,1150,699,85,0,23,21,1,70,60,2.8, AoE,Physical
+33,Adnachiel,Sniper,Anti-Air,Marksman,3,1080,365,134,1080,388,134,1080,415,134,1080,438,134,0,11,9,1,70,60,1, 1,Physical
+34,Kroos,Sniper,Anti-Air,Marksman,3,1060,375,126,1060,396,126,1060,425,126,1060,446,126,0,11,9,1,70,66,1, 1,Physical
+35,Rangers,Sniper,Anti-Air,Marksman,2,780,269,66,780,269,66,780,299,66,780,299,66,0,7,5,1,70,65,1, 1,Physical
+36,"""Justice Knight""",Sniper,Anti-Air,Marksman,1,495,172,41,495,172,41,595,217,41,595,217,41,0,3,3,1,200,200,1, 1,Physical
